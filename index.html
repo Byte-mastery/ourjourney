@@ -2,18 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Our Love Story</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Journey</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="story-container"></div>
-  <div id="nav-buttons">
-    <button id="prev-btn" disabled>Previous</button>
-    <button id="next-btn">Next</button>
+  <div class="scene" id="introScene">
+    <h1>Hi Jaan 💖</h1>
+    <p>This is not just a website… it’s a walk through our love story.</p>
+    <button onclick="startJourney()">Click here to begin our journey ➤</button>
   </div>
 
+  <div class="scene hidden" id="scene1">
+    <img src="assets/royal-kalinga.png" alt="Royal Kalinga Restaurant" />
+    <h2>💒 The Wedding We Met (2012)</h2>
+    <p>
+      It was Royal Kalinga, where people came to celebrate another love story… <br/>
+      But secretly, destiny had a plan — to begin *ours*. That glance you gave me? <br/>
+      I still feel it in my heart.
+    </p>
+    <button onclick="nextScene()">Next ➤</button>
+  </div>
+
+  <!-- More scenes will be added step-by-step -->
+  
   <script src="script.js"></script>
 </body>
 </html>
