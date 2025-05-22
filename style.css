@@ -1,78 +1,81 @@
 body {
   margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom right, #ffd6e8, #ffe3f1);
   font-family: 'Cursive', sans-serif;
-  color: #880e4f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background: #ffe6f0;
   overflow: hidden;
 }
 
-#storybook {
-  width: 90%;
-  max-width: 600px;
-  background: #fff0f5;
-  border: 10px solid #f8bbd0;
-  border-radius: 30px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.4);
+.scene-container {
+  width: 100vw;
+  height: 100vh;
   position: relative;
 }
 
 .scene {
-  display: none;
-  animation: fadeIn 1s ease-in-out;
+  width: 100%;
+  height: 100%;
+  background: url('assets/flower-frame.png') no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 2s ease-in-out;
 }
 
-.scene.active {
-  display: block;
+.message {
+  text-align: center;
+  color: #b30059;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
 }
 
-h1, h2 {
-  font-size: 2em;
-  color: #d81b60;
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
-  font-size: 1.2em;
-  margin: 1em 0;
+  font-size: 1.4rem;
 }
 
-img {
-  width: 100%;
-  max-height: 250px;
-  border-radius: 20px;
-  margin-top: 1em;
-  object-fit: cover;
+.kiss-gif {
+  width: 150px;
+  margin: 1rem auto;
+  display: block;
 }
 
 button {
-  padding: 10px 20px;
-  background: #f06292;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background: #ff66a3;
   color: white;
   border: none;
-  border-radius: 25px;
-  font-size: 1em;
+  border-radius: 30px;
   cursor: pointer;
-  margin-top: 20px;
-  transition: 0.3s ease;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background: #ec407a;
+  background: #e60073;
+}
+
+.bg-hearts {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
