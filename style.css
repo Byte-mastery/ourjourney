@@ -1,64 +1,78 @@
 body {
   margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #ffd6e8, #ffe3f1);
   font-family: 'Cursive', sans-serif;
-  background: linear-gradient(to bottom, #ffe0e9, #fff5f9);
-  color: #b30059;
-  text-align: center;
+  color: #880e4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   overflow: hidden;
 }
 
-.container {
-  padding: 50px 20px;
+#storybook {
+  width: 90%;
+  max-width: 600px;
+  background: #fff0f5;
+  border: 10px solid #f8bbd0;
+  border-radius: 30px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.4);
+  position: relative;
 }
 
 .scene {
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
   animation: fadeIn 1s ease-in-out;
 }
 
 .scene.active {
-  display: flex;
+  display: block;
 }
 
 h1, h2 {
   font-size: 2em;
-  color: #d6336c;
+  color: #d81b60;
 }
 
 p {
-  max-width: 600px;
   font-size: 1.2em;
-  margin: 20px;
+  margin: 1em 0;
+}
+
+img {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 20px;
+  margin-top: 1em;
+  object-fit: cover;
 }
 
 button {
   padding: 10px 20px;
-  background-color: #ff80ab;
-  border: none;
-  border-radius: 30px;
+  background: #f06292;
   color: white;
+  border: none;
+  border-radius: 25px;
   font-size: 1em;
   cursor: pointer;
   margin-top: 20px;
-  transition: background 0.3s;
+  transition: 0.3s ease;
 }
 
 button:hover {
-  background-color: #ff4081;
-}
-
-img {
-  max-width: 80%;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background: #ec407a;
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
