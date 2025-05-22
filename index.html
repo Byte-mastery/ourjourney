@@ -2,64 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Love Story</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div id="storybook">
-    <div class="scene active" id="scene0">
-      <h1>Hi Jaan ❤️</h1>
-      <p>Ready to relive our journey?</p>
-      <button onclick="nextScene()">Click to begin</button>
-    </div>
-
+  <div class="scene-container" id="sceneContainer">
     <div class="scene" id="scene1">
-      <h2>Where It All Began - 2012</h2>
-      <p>We met at a wedding at Royal Kalinga. Just strangers, unaware what destiny held for us.</p>
-      <img src="https://i.imgur.com/ydSBD1W.jpeg" alt="Royal Kalinga" />
+      <img src="assets/hearts-bg.png" class="bg-hearts" />
+      <div class="message">
+        <h1>Hi Dhana 💖</h1>
+        <p>Come closer... I have something special to show you.</p>
+        <img src="assets/girl-kiss.gif" class="kiss-gif"/>
+        <button onclick="nextScene()">Let’s Begin Our Journey ➤</button>
+      </div>
     </div>
 
-    <div class="scene" id="scene2">
-      <h2>The First Flame - 2013</h2>
-      <p>From chats to laughter to long calls — we became each other's person.</p>
-      <p><strong>July 3rd, 2013</strong>: You asked. I said yes.</p>
-    </div>
-
-    <div class="scene" id="scene3">
-      <h2>Almost, But Not Yet</h2>
-      <p>We met a few times, but love never faded. Distance tested us — love strengthened us.</p>
-    </div>
-
-    <div class="scene" id="scene4">
-      <h2>The Day Distance Lost - May 23rd, 2019</h2>
-      <p>I saw your eyes across the table — not through a screen. And the world melted away.</p>
-    </div>
-
-    <div class="scene" id="scene5">
-      <h2>A Year of Us</h2>
-      <p>June 2019 – May 2020: We lived in the same city. Shared sunsets. Shared dreams.</p>
-    </div>
-
-    <div class="scene" id="scene6">
-      <h2>Time, Again</h2>
-      <p>Nov 13, 2023: Celebrating your birthday — a memory I cherish.</p>
-      <p>Dec 18, 2024: Distance returns. You in Dubai, me in Odisha. But love lives in both places.</p>
-    </div>
-
-    <div class="scene" id="scene7">
-      <h2>The Promise</h2>
-      <p>One day, soon, our story will begin a new chapter — togetherness, forever.</p>
-    </div>
-
-    <div class="scene" id="scene8">
-      <h2>Until Then…</h2>
-      <p>In every timezone, I love you. In every waiting moment, I choose you. In every heartbeat, I carry you.</p>
-      <p>💖 Forever Yours 💖</p>
-    </div>
-
-    <button id="nextBtn" onclick="nextScene()">Next ➡️</button>
+    <!-- Scene 2 will be revealed by JS -->
   </div>
+
+  <audio autoplay loop>
+    <source src="assets/bg-music.mp3" type="audio/mp3">
+  </audio>
 
   <script src="script.js"></script>
 </body>
