@@ -2,30 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Love Journey</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="scene" id="introScene">
-    <h1>Hi Jaan 💖</h1>
-    <p>This is not just a website… it’s a walk through our love story.</p>
-    <button onclick="startJourney()">Click here to begin our journey ➤</button>
+  <div id="storyContainer" class="container">
+    <div class="scene active" id="scene0">
+      <h1>Hi Jaan ❤️</h1>
+      <p>Click below to see our love story unfold...</p>
+      <button onclick="nextScene()">Start Our Journey</button>
+    </div>
+
+    <div class="scene" id="scene1">
+      <img src="https://i.imgur.com/W3E9F5F.png" alt="Royal Kalinga" />
+      <h2>2012 – Where it All Began</h2>
+      <p>We met at a wedding at Royal Kalinga Restaurant... I didn’t know then that this stranger would one day become my forever.</p>
+      <button onclick="nextScene()">Next</button>
+    </div>
+
+    <div class="scene" id="scene2">
+      <h2>2013 – The First Flame</h2>
+      <p>From chats to laughter, to long calls and butterflies — we became each other’s person. <br> On July 3rd, 2013, you asked... I said yes 💕</p>
+      <button onclick="nextScene()">Next</button>
+    </div>
+
+    <!-- Add more scenes similarly -->
   </div>
 
-  <div class="scene hidden" id="scene1">
-    <img src="assets/royal-kalinga.png" alt="Royal Kalinga Restaurant" />
-    <h2>💒 The Wedding We Met (2012)</h2>
-    <p>
-      It was Royal Kalinga, where people came to celebrate another love story… <br/>
-      But secretly, destiny had a plan — to begin *ours*. That glance you gave me? <br/>
-      I still feel it in my heart.
-    </p>
-    <button onclick="nextScene()">Next ➤</button>
-  </div>
-
-  <!-- More scenes will be added step-by-step -->
-  
   <script src="script.js"></script>
 </body>
 </html>
