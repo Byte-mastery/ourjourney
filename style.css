@@ -1,0 +1,138 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff8f0;
+  color: #3a2e2e;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header.home-section {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(to bottom, #f6d365 0%, #fda085 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  color: #4a2c2a;
+  font-family: 'Great Vibes', cursive;
+}
+
+header.home-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://i.imgur.com/jhzRtWb.jpg') no-repeat center/cover;
+  opacity: 0.35;
+  z-index: 1;
+}
+
+header.home-section .header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+header.home-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+header.home-section p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.story-section {
+  margin-bottom: 70px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.story-section h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  color: #9b4d3c;
+  margin-bottom: 10px;
+}
+
+.story-section h3 {
+  font-size: 1.4rem;
+  color: #7a4a40;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.story-section p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #4a3a36;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visual {
+  max-width: 350px;
+  margin: 0 auto 30px;
+}
+
+.visual img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(156, 90, 85, 0.3);
+}
+
+.final-section {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #66332f;
+  max-width: 600px;
+  margin: 60px auto 100px;
+}
+
+.final-section blockquote {
+  margin-bottom: 30px;
+}
+
+.final-section button {
+  background-color: #9b4d3c;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.final-section button:hover {
+  background-color: #7a3a2c;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  color: #7a4a40;
+  border-top: 1px solid #f0d9d3;
+  margin-top: 50px;
+}
